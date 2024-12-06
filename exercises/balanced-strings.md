@@ -25,4 +25,16 @@ Write below the actions you took on each step and the results you obtained.
 Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to complete this exercise.
 
 ## Answer
-
+1. Le partitionnement de l’espace d’entrée consiste à identifier les caractéristiques des entrées possibles et à les diviser en blocs de partitions distincts.
+   
+   Validité de l’entrée :
+- Partition 1 : null (entrée invalide).
+- Partition 2 : Chaîne vide (entrée triviale, équilibrée).
+- Partition 3 : Chaîne contenant des espaces uniquement (équilibrée).
+- Partition 4 : Chaîne contenant des symboles valides ({}, [], ()).
+- Partition 5 : Chaîne contenant des caractères invalides (non-symboles).
+  
+    Structure des symboles :
+- Partition 6 : Chaîne équilibrée (ex : {[]}, ({[]})).
+- Partition 7 : Chaîne déséquilibrée (ex : {[}, ([]}).
+- Partition 8 : Chaîne mal imbriquée (ex : ([)], {]}).
