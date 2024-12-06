@@ -38,3 +38,18 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 - Partition 6 : Chaîne équilibrée (ex : {[]}, ({[]})).
 - Partition 7 : Chaîne déséquilibrée (ex : {[}, ([]}).
 - Partition 8 : Chaîne mal imbriquée (ex : ([)], {]}).
+
+2. La couverture des instructions (statement coverage) mesure si chaque ligne de code dans votre programme a été exécutée au moins une fois par les tests.
+Actuellement, nous avons une couverture de 100%, ce qui signifie que toutes les lignes de notre code sont couvertes par nos tests actuels.
+Pour le développement des tests nous avons repris nos partitions de la question 1 et vérifié chacun de ces cas.
+
+
+3. Dans notre code de la méthode `isBalanced`, il n'y a pas de conditions avec plus de deux opérateurs booléens, mais il existe des prédicats simples qui sont déjà couverts dans les tests. 
+Ces tests garantissent que chaque prédicat est évalué à la fois à vrai et à faux. Nos tests actuels satisfont donc à Base Choice Coverage. Aucune modification ou ajout de tests n'est nécessaire pour garantir la couverture de base des choix.
+
+
+4. Résultat de l'exécution de PIT :
+   Mutation Score : 100% (Tous les mutants ont été tués)
+   Live Mutants : Aucun mutant vivant
+
+Cela signifie que notre suite de tests actuelle a couvert tous les scénarios créés par le mutation testing de PIT, et tous les mutants générés ont été éliminés par nos tests.
