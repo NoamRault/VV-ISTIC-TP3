@@ -110,7 +110,6 @@ Prédicats logiques :
 Aucune nouvelle entrée n'est nécessaire ici non plus.
 
 4. Résultat de l'exécution de PIT :
-   Mutation Score : 100% (Tous les mutants ont été tués)
-   Live Mutants : Aucun mutant vivant
+   Mutation Score : >> Generated 33 mutations Killed 27 (82%)
 
-Cela signifie que notre suite de tests actuelle a couvert tous les scénarios créés par le mutation testing de PIT, et tous les mutants générés ont été éliminés par nos tests.
+Cela signifie que notre suite de tests actuelle n'a pas couvert tous les scénarios créés par le mutation testing de PIT, mais 82% est une valeur acceptable.
